@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#2F4A3C">
+  <title>Product — Rupa Alam</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="shop">
+  <div class="app">
+    <header class="topbar" id="topbar"></header>
+    <div class="wrap" id="product"></div>
+    <footer class="footer">Patch-test first. Keep away from eyes. Store away from hard sun.</footer>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+  <script src="assets/js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const id = new URLSearchParams(location.search).get("id");
+      const p = PRODUCTS.find(x => x.id === id) || PRODUCTS[0];
+      document.title = p.name + " — Rupa Alam";
+      document.getElementById("product").innerHTML = `
+        <section class="product-hero">
+          <img src="${p.img}" alt="${p.name}">
+          <div>
+            <div class="tag">${p.tag}</div>
+            <h2>${p.name}</h2>
+            <p class="meta">${p.kind}</p>
+            <p class="lede">${p.blurb}</p>
+            <p class="price" style="font-size:22px;margin-bottom:8px">${fmt(p.price)}</p>
+            <div class="qty">
+              <button type="button" id="minus">−</button>
+              <span id="qty">1</span>
+              <button type="button" id="plus">+</button>
+            </div>
+            <button class="btn btn-dark full" id="add">Add to cart</button>
+            <p class="hint">${p.use}</p>
+            <h3 class="serif" style="margin:22px 0 8px;color:var(--forest);font-size:24px;font-weight:500">Notes</h3>
+            <ul class="notes">${p.notes.map(n => `<li>${n}</li>`).join("")}</ul>
+          </div>
+        </section>`;
+      let q = 1;
+      const paint = () => document.getElementById("qty").textContent = q;
+      document.getElementById("minus").onclick = () => { q = Math.max(1, q-1); paint(); };
+      document.getElementById("plus").onclick = () => { q += 1; paint(); };
+      document.getElementById("add").onclick = () => {
+        addToCart(p.id, q);
+        const b = document.getElementById("add");
+        b.textContent = "Added to cart";
+        setTimeout(() => b.textContent = "Add to cart", 1200);
+      };
+    });
+  </script>
+</body>
+</html>
