@@ -156,7 +156,9 @@ function injectChrome(active) {
   const header = document.getElementById("topbar");
   if (header) header.innerHTML = `
     <a class="brand" href="index.html">
-      <span class="brand-mark"><span></span></span>
+      <span class="brand-mark">
+        <img src="assets/img/brand-logo.png"/>
+      </span>
       <b>RUPA ALAM</b>
     </a>
     <nav class="topnav">
