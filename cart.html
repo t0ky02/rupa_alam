@@ -15,18 +15,18 @@
     <header class="topbar" id="topbar"></header>
     <section class="section">
       <div class="wrap" style="max-width:720px">
-        <div class="tag">Your ritual</div>
-        <h2>Cart</h2>
+        <div class="tag" data-i18n="cart.tag">Your ritual</div>
+        <h2 data-i18n="cart.title">Cart</h2>
         <div id="list"></div>
         <div class="totals" id="box" hidden>
-          <div><span>Subtotal</span><strong id="sub">Rp 0</strong></div>
-          <div><span>Shipping</span><span>Confirmed on WhatsApp</span></div>
-          <p class="hint">Phase 0 checkout: your order is written to WhatsApp and answered personally. Midtrans can be added later.</p>
+          <div><span data-i18n="cart.subtotal">Subtotal</span><strong id="sub">Rp 0</strong></div>
+          <div><span data-i18n="cart.shipping">Shipping</span><span data-i18n="cart.shipping_note">Confirmed on WhatsApp</span></div>
+          <p class="hint" data-i18n="cart.hint">Phase 0 checkout: your order is written to WhatsApp and answered personally. Midtrans can be added later.</p>
           <form class="form" id="form">
-            <input name="name" placeholder="Name" required>
-            <input name="city" placeholder="City / area" required>
-            <textarea name="note" rows="3" placeholder="Note — scent preference, gift wrap, questions"></textarea>
-            <button class="btn btn-dark full" type="submit">Send order on WhatsApp</button>
+            <input name="name" data-i18n-placeholder="cart.name" placeholder="Name" required>
+            <input name="city" data-i18n-placeholder="cart.city" placeholder="City / area" required>
+            <textarea name="note" rows="3" data-i18n-placeholder="cart.note" placeholder="Note — scent preference, gift wrap, questions"></textarea>
+            <button class="btn btn-dark full" type="submit" data-i18n="cart.send">Send order on WhatsApp</button>
           </form>
         </div>
       </div>
@@ -41,7 +41,12 @@
       const box = document.getElementById("box");
       if (!lines.length) {
         box.hidden = true;
-        list.innerHTML = `<div class="cart-empty"><p class="quote">The cart is quiet.</p><p class="lede">Begin with one oil.</p><a class="btn btn-dark" href="shop.html">Shop</a></div>`;
+        list.innerHTML = `<div class="cart-empty">
+          <p class="quote" data-i18n="cart.empty_quote">The cart is quiet.</p>
+          <p class="lede" data-i18n="cart.empty_lede">Begin with one oil.</p>
+          <a class="btn btn-dark" href="shop.html" data-i18n="cart.empty_btn">Shop</a>
+        </div>`;
+        applyTranslations();
         return;
       }
       box.hidden = false;
@@ -60,13 +65,20 @@
           <div class="price">${fmt(i.line)}</div>
         </div>`).join("");
       document.getElementById("sub").textContent = fmt(cartTotal());
+      applyTranslations();
     }
+
+    window.__onLangChange = function () {
+      render();
+    };
+
     document.addEventListener("click", (e) => {
       const b = e.target.closest("[data-q]");
       if (!b) return;
       setQty(b.dataset.q, Number(b.dataset.v));
       render();
     });
+
     document.addEventListener("DOMContentLoaded", () => {
       render();
       document.getElementById("form").addEventListener("submit", (e) => {

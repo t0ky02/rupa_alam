@@ -1,0 +1,83 @@
+{
+  "nav.home": "Home",
+  "nav.shop": "Shop",
+  "nav.story": "Story",
+  "nav.place": "Place",
+  "nav.chat": "Chat",
+  "nav.cart": "Cart",
+
+  "brand.name": "RUPA ALAM",
+
+  "home.kicker": "Natural wellness",
+  "home.hero_title": "Ritual,<br>not routine.",
+  "home.hero_text": "Body perfume oils born from a quiet night with lemongrass, warm palms, and the wish to return to yourself.",
+  "home.btn_shop": "Shop the oils",
+  "home.btn_story": "The beginning",
+
+  "home.section1_tag": "The first three",
+  "home.section1_title": "Body perfume oils",
+  "home.section1_lede": "Not a loud perfume. Not a heavy cream. A lightweight oil that nourishes skin and leaves a quiet trail of scent.",
+
+  "home.section2_tag": "The beginning",
+  "home.section2_quote": "It began not with a business plan, but with a personal ritual.",
+  "home.section2_text": "Work finished. The body slowed. Lemongrass outside. Oil warmed between the palms. What I valued was not only the skin. It was the return.",
+  "home.section2_btn": "Read the story",
+
+  "home.section3_title": "A day, in three gestures",
+  "home.section3_lede": "Simple enough for a Jakarta evening. Deep enough to become a house.",
+  "home.ritual1_tag": "Morning",
+  "home.ritual1_title": "Milk soap, then oil",
+  "home.ritual1_text": "Cleanse without stripping. Press Orange Blossom into still-damp skin.",
+  "home.ritual2_tag": "After movement",
+  "home.ritual2_title": "Salt, then breath",
+  "home.ritual2_text": "Eucalyptus salt. Rinse. Follow with Moist if the body wants the garden.",
+  "home.ritual3_tag": "Night",
+  "home.ritual3_title": "Jasmine Veil + mist",
+  "home.ritual3_text": "The original ritual. Warm oil. Pillow mist. Rest.",
+
+  "home.section4_tag": "The place, later",
+  "home.section4_title": "A garden sanctuary",
+  "home.section4_lede": "Villa, onsen, sauna, steam, oil room, café, Nest Lab. First as a day-escape. Always as one evening, stretched into rooms.",
+  "home.section4_btn": "See the sanctuary",
+
+  "footer": "Rupa Alam · Nature-made care · Jakarta & the garden ahead",
+
+  "shop.title": "Shop",
+  "shop.tag": "The oils",
+  "shop.lede": "Lightweight body perfume oils. Press into skin after bath or whenever the day needs a quieter scent.",
+
+  "story.tag": "The beginning",
+  "story.title": "Not a business plan.<br>A personal ritual.",
+  "story.p1": "At the end of the day, there is a moment when the noise begins to disappear. Work is finished. The body slows down. The mind becomes quieter.",
+  "story.p2": "For me, this moment often came at night, surrounded by nature, looking toward the lemongrass growing outside, and taking time to care for my skin with botanical oils.",
+  "story.p3": "It was something simple. Oil warmed between the palms. The fragrance of plants rising gently. A few quiet minutes to massage the skin. The scent of flowers, leaves and woods lingering in the air.",
+  "story.p4": "Over time I realized that what I valued was not simply the effect of an oil on my skin. I valued the ritual itself. It was a moment of returning to myself.",
+  "story.quote": "From that night came body-perfumery oils — and the wish for a house where other people could receive the same evening.",
+  "story.p5": "Rupa means form. Alam means nature. Together they are how beauty looks when it stays close to the earth. The craft is studied with the discipline of perfume. The plants are Indonesian. The climate is humid, so the oils stay light.",
+  "story.btn": "Begin with an oil",
+
+  "sanctuary.tag": "The place",
+  "sanctuary.title": "A garden sanctuary",
+  "sanctuary.lede": "Coming later. A place to stretch one evening into rooms.",
+
+  "cart.tag": "Your ritual",
+  "cart.title": "Cart",
+  "cart.subtotal": "Subtotal",
+  "cart.shipping": "Shipping",
+  "cart.shipping_note": "Confirmed on WhatsApp",
+  "cart.hint": "Phase 0 checkout: your order is written to WhatsApp and answered personally. Midtrans can be added later.",
+  "cart.name": "Name",
+  "cart.city": "City / area",
+  "cart.note": "Note — scent preference, gift wrap, questions",
+  "cart.send": "Send order on WhatsApp",
+  "cart.empty": "Your cart is empty.",
+
+  "product.available_soon": "AVAILABLE SOON",
+  "product.add": "Add",
+  "product.added": "Added",
+  "product.notes": "Notes",
+  "product.how_to_use": "How to use",
+
+  "lang.en": "EN",
+  "lang.id": "ID"
+}

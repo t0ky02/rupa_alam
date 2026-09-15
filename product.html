@@ -14,45 +14,64 @@
   <div class="app">
     <header class="topbar" id="topbar"></header>
     <div class="wrap" id="product"></div>
-    <footer class="footer">Patch-test first. Keep away from eyes. Store away from hard sun.</footer>
+    <footer class="footer" data-i18n="footer.product">Patch-test first. Keep away from eyes. Store away from hard sun.</footer>
   </div>
   <nav class="tabs" id="tabs"></nav>
   <script src="assets/js/app.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    function renderProduct() {
       const id = new URLSearchParams(location.search).get("id");
       const p = PRODUCTS.find(x => x.id === id) || PRODUCTS[0];
-      document.title = p.name + " — Rupa Alam";
+      const name = p.name[currentLang] || p.name.en;
+      const kind = p.kind[currentLang] || p.kind.en;
+      const tag = p.tag[currentLang] || p.tag.en;
+      const blurb = p.blurb[currentLang] || p.blurb.en;
+      const use = p.use[currentLang] || p.use.en;
+      const notes = p.notes[currentLang] || p.notes.en;
+      const notice = p.notice[currentLang] || p.notice.en;
+
+      document.title = name + " — Rupa Alam";
       document.getElementById("product").innerHTML = `
         <section class="product-hero">
-          <img src="${p.img}" alt="${p.name}">
+          <img src="${p.img}" alt="${name}">
           <div>
-            <div class="tag">${p.tag}</div>
-            <h2>${p.name}</h2>
-            <p class="meta">${p.kind}</p>
-            <p class="lede">${p.blurb}</p>
-            <p class="price" style="font-size:22px;margin-bottom:8px">${fmt(p.price)}</p>
+            <div class="tag">${tag}</div>
+            <h2>${name}</h2>
+            <p class="meta">${kind}</p>
+            <p class="lede">${blurb}</p>
+            <p class="price" style="font-size:22px;margin-bottom:8px">${notice}</p>
             <div class="qty">
               <button type="button" id="minus">−</button>
               <span id="qty">1</span>
               <button type="button" id="plus">+</button>
             </div>
-            <button class="btn btn-dark full" id="add">Add to cart</button>
-            <p class="hint">${p.use}</p>
-            <h3 class="serif" style="margin:22px 0 8px;color:var(--forest);font-size:24px;font-weight:500">Notes</h3>
-            <ul class="notes">${p.notes.map(n => `<li>${n}</li>`).join("")}</ul>
+            <button class="btn btn-dark full" id="add" data-i18n="product.add">Add to cart</button>
+            <p class="hint">${use}</p>
+            <h3 class="serif" style="margin:22px 0 8px;color:var(--forest);font-size:24px;font-weight:500" data-i18n="product.notes">Notes</h3>
+            <ul class="notes">${notes.map(n => `<li>${n}</li>`).join("")}</ul>
           </div>
         </section>`;
+
+      applyTranslations();
+
       let q = 1;
       const paint = () => document.getElementById("qty").textContent = q;
-      document.getElementById("minus").onclick = () => { q = Math.max(1, q-1); paint(); };
+      document.getElementById("minus").onclick = () => { q = Math.max(1, q - 1); paint(); };
       document.getElementById("plus").onclick = () => { q += 1; paint(); };
       document.getElementById("add").onclick = () => {
         addToCart(p.id, q);
         const b = document.getElementById("add");
-        b.textContent = "Added to cart";
-        setTimeout(() => b.textContent = "Add to cart", 1200);
+        b.textContent = t("product.added");
+        setTimeout(() => (b.textContent = t("product.add")), 1200);
       };
+    }
+
+    window.__onLangChange = function () {
+      renderProduct();
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(renderProduct, 80);
     });
   </script>
 </body>

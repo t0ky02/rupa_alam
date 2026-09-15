@@ -15,18 +15,27 @@
     <header class="topbar" id="topbar"></header>
     <section class="section">
       <div class="wrap">
-        <div class="tag">The house oils</div>
-        <h2>Shop</h2>
-        <p class="lede">Rupa Alam's product is still on processing of the making to give you the natural sensation that you are looking for.</p>
+        <div class="tag" data-i18n="shop.tag">The house oils</div>
+        <h2 data-i18n="shop.title">Shop</h2>
+        <p class="lede" data-i18n="shop.lede">Rupa Alam's product is still on processing of the making to give you the natural sensation that you are looking for.</p>
         <div class="grid-3" id="shop"></div>
       </div>
     </section>
-    <footer class="footer">Small batch · botanical · made for humid evenings</footer>
+    <footer class="footer" data-i18n="footer.shop">Small batch · botanical · made for humid evenings</footer>
   </div>
   <nav class="tabs" id="tabs"></nav>
   <script src="assets/js/app.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => mountShop(document.getElementById("shop")));
+    window.__onLangChange = function () {
+      mountShop(document.getElementById("shop"));
+    };
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        if (document.getElementById("shop") && !document.getElementById("shop").innerHTML) {
+          mountShop(document.getElementById("shop"));
+        }
+      }, 100);
+    });
   </script>
 </body>
 </html>

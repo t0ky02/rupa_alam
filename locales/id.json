@@ -1,0 +1,83 @@
+{
+  "nav.home": "Beranda",
+  "nav.shop": "Toko",
+  "nav.story": "Cerita",
+  "nav.place": "Tempat",
+  "nav.chat": "Chat",
+  "nav.cart": "Keranjang",
+
+  "brand.name": "RUPA ALAM",
+/*
+  "home.kicker": "Natural wellness",
+  "home.hero_title": "Ritual,<br>bukan rutinitas.",
+  "home.hero_text": "Body perfume oil yang lahir dari malam yang tenang bersama serai, telapak tangan yang hangat, dan keinginan untuk kembali pada diri sendiri.",
+  "home.btn_shop": "Lihat minyaknya",
+  "home.btn_story": "Awal mula",
+*/
+  "home.section1_tag": "Tiga yang pertama",
+  "home.section1_title": "Body perfume oil",
+  "home.section1_lede": "Bukan parfum yang keras. Bukan krim yang berat. Minyak ringan yang merawat kulit dan meninggalkan jejak wangi yang tenang.",
+
+  "home.section2_tag": "Awal mula",
+  "home.section2_quote": "Dimulai bukan dari rencana bisnis, melainkan dari ritual pribadi.",
+  "home.section2_text": "Pekerjaan selesai. Tubuh melambat. Serai di luar. Minyak dihangatkan di antara telapak tangan. Yang saya hargai bukan hanya kulitnya. Melainkan kembalinya.",
+  "home.section2_btn": "Baca ceritanya",
+
+  "home.section3_title": "Satu hari, tiga gestur",
+  "home.section3_lede": "Sederhana untuk malam di Jakarta. Dalam cukup untuk menjadi sebuah rumah.",
+  "home.ritual1_tag": "Pagi",
+  "home.ritual1_title": "Sabun susu, lalu minyak",
+  "home.ritual1_text": "Membersihkan tanpa mengikis. Tekan Orange Blossom ke kulit yang masih lembap.",
+  "home.ritual2_tag": "Setelah bergerak",
+  "home.ritual2_title": "Garam, lalu napas",
+  "home.ritual2_text": "Garam eucalyptus. Bilas. Lanjutkan dengan Moist jika tubuh menginginkan taman.",
+  "home.ritual3_tag": "Malam",
+  "home.ritual3_title": "Jasmine Veil + mist",
+  "home.ritual3_text": "Ritual asli. Hangatkan minyak. Pillow mist. Istirahat.",
+
+  "home.section4_tag": "Tempatnya, nanti",
+  "home.section4_title": "Sebuah sanctuary taman",
+  "home.section4_lede": "Villa, onsen, sauna, steam, ruang minyak, kafe, Nest Lab. Pertama sebagai pelarian sehari. Selalu sebagai satu malam yang terbentang menjadi ruang-ruang.",
+  "home.section4_btn": "Lihat sanctuary",
+
+  "footer": "Rupa Alam · Perawatan dari alam · Jakarta & taman di depan",
+
+  "shop.title": "Toko",
+  "shop.tag": "Minyaknya",
+  "shop.lede": "Body perfume oil yang ringan. Tekan ke kulit setelah mandi atau kapan pun hari membutuhkan wangi yang lebih tenang.",
+
+  "story.tag": "Awal mula",
+  "story.title": "Bukan rencana bisnis.<br>Sebuah ritual pribadi.",
+  "story.p1": "Di akhir hari, ada momen ketika kebisingan mulai menghilang. Pekerjaan selesai. Tubuh melambat. Pikiran menjadi lebih tenang.",
+  "story.p2": "Bagi saya, momen ini sering datang di malam hari, dikelilingi alam, memandang serai yang tumbuh di luar, dan menyempatkan waktu merawat kulit dengan minyak botani.",
+  "story.p3": "Sesuatu yang sederhana. Minyak dihangatkan di antara telapak tangan. Wangi tanaman naik perlahan. Beberapa menit tenang untuk memijat kulit. Aroma bunga, daun, dan kayu tertinggal di udara.",
+  "story.p4": "Seiring waktu saya menyadari bahwa yang saya hargai bukan sekadar efek minyak pada kulit. Saya menghargai ritualnya sendiri. Itu adalah momen kembali pada diri sendiri.",
+  "story.quote": "Dari malam itu lahir body-perfumery oil — dan keinginan akan sebuah rumah di mana orang lain bisa menerima malam yang sama.",
+  "story.p5": "Rupa berarti bentuk. Alam berarti alam. Bersama-sama mereka adalah bagaimana keindahan tampak ketika tetap dekat dengan bumi. Kerajinannya dipelajari dengan disiplin parfum. Tanamannya dari Indonesia. Iklimnya lembap, jadi minyaknya tetap ringan.",
+  "story.btn": "Mulai dengan sebuah minyak",
+
+  "sanctuary.tag": "Tempatnya",
+  "sanctuary.title": "Sebuah sanctuary taman",
+  "sanctuary.lede": "Akan datang nanti. Sebuah tempat untuk membentangkan satu malam menjadi ruang-ruang.",
+
+  "cart.tag": "Ritualmu",
+  "cart.title": "Keranjang",
+  "cart.subtotal": "Subtotal",
+  "cart.shipping": "Pengiriman",
+  "cart.shipping_note": "Dikonfirmasi via WhatsApp",
+  "cart.hint": "Checkout fase 0: pesananmu ditulis ke WhatsApp dan dijawab secara personal. Midtrans bisa ditambahkan nanti.",
+  "cart.name": "Nama",
+  "cart.city": "Kota / area",
+  "cart.note": "Catatan — preferensi wangi, gift wrap, pertanyaan",
+  "cart.send": "Kirim pesanan via WhatsApp",
+  "cart.empty": "Keranjangmu kosong.",
+
+  "product.available_soon": "SEGERA HADIR",
+  "product.add": "Tambah",
+  "product.added": "Ditambahkan",
+  "product.notes": "Notes",
+  "product.how_to_use": "Cara pakai",
+
+  "lang.en": "EN",
+  "lang.id": "ID"
+}
