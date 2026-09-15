@@ -5,6 +5,7 @@ const PRODUCTS = [
     name: "Orange Blossom",
     kind: "Body perfume oil · 30 ml",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/product/orange-blossom.jpeg",
     tag: "The opening",
     blurb: "Bright, clean, sun on white petals. A morning oil that still behaves at dusk.",
@@ -16,6 +17,7 @@ const PRODUCTS = [
     name: "Jasmine Veil",
     kind: "Body perfume oil · 30 ml",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/product/jasmine-veil.jpeg",
     tag: "The night ritual",
     blurb: "A soft floral trail, like evening air through a window. The oil the house began with.",
@@ -27,6 +29,7 @@ const PRODUCTS = [
     name: "Moist",
     kind: "Body perfume oil · 30 ml",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/product/moist.jpeg",
     tag: "After rain",
     blurb: "Green, damp hush after rain. Wet forest. The soul of the garden.",
@@ -38,6 +41,7 @@ const PRODUCTS = [
     name: "Milk Soap",
     kind: "Cleansing bar",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/milk-soap.jpg",
     tag: "Morning",
     blurb: "A hydrating cleanse before oil. Soft, simple, no perfume shout.",
@@ -49,6 +53,7 @@ const PRODUCTS = [
     name: "Eucalyptus Salt",
     kind: "Body scrub · 200 g",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/salt-scrub.jpg",
     tag: "After movement",
     blurb: "Salt and eucalyptus to refresh the skin before oil.",
@@ -60,6 +65,7 @@ const PRODUCTS = [
     name: "Pillow Mist",
     kind: "Room & linen mist · 50 ml",
     price: "",
+    notice:"AVAILABLE SOON",
     img: "assets/img/pillow-mist.jpg",
     tag: "Before rest",
     blurb: "Lavender and kenanga. The last gesture of the day.",
@@ -132,6 +138,7 @@ function productCard(p) {
       <div class="meta">${p.kind}</div>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
         <!--<span class="price">${fmt(p.price)}</span>-->
+        <span>${fmt(p.notice)}</span>
         <!--<button class="btn btn-dark" data-add="${p.id}">Add</button>-->
       </div>
     </div>
@@ -157,7 +164,7 @@ function injectChrome(active) {
   if (header) header.innerHTML = `
     <a class="brand" href="index.html">
       <span class="brand-mark">
-        <img src="assets/img/brand-logo.png"/>
+        <img src="assets/img/brand-logo1.png"/>
       </span>
       <b>RUPA ALAM</b>
     </a>
