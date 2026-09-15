@@ -38,6 +38,10 @@ button,input,textarea,select{font:inherit}
   display:grid;
   place-items:center;
 }
+.brand-mark img{
+  width: 30px;
+  height: 30px;
+}
 .brand-mark span{width:10px;height:14px;border-radius:8px 8px 10px 10px;background:var(--cream);display:block}
 .brand b{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:.12em;font-size:15px}
 .icon-btn{
