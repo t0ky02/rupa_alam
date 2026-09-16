@@ -334,23 +334,23 @@ function injectChrome(active) {
     tabs.innerHTML = `
       <a href="index.html" class="${active === "home" ? "active" : ""}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/></svg>
-        <span data-i18n="nav.home">Home</span>
+        <span>Home</span>
       </a>
       <a href="shop.html" class="${active === "shop" ? "active" : ""}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>
-        <span data-i18n="nav.shop">Shop</span>
+        <span>Shop</span>
       </a>
       <a href="sanctuary.html" class="${active === "place" ? "active" : ""}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c4 4 7 7.2 7 11a7 7 0 1 1-14 0c0-3.8 3-7 7-11z"/></svg>
-        <span data-i18n="nav.place">Place</span>
+        <span>Place</span>
       </a>
       <a href="cart.html" class="${active === "cart" ? "active" : ""}">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 7h15l-1.5 9h-12z"/><path d="M6 7 5 4H2"/></svg>
-        <span data-i18n="nav.cart">Cart</span>
+        <span>Cart</span>
       </a>
       <a href="https://wa.me/${WA}?text=Halo%20Rupa%20Alam%2C%20saya%20ingin%20bertanya%20tentang%20produk%20atau%20ritual" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 18 5 21l3.2-1.2A8.5 8.5 0 1 0 6 18z"/></svg>
-        <span data-i18n="nav.chat">Chat</span>
+        <span>Chat</span>
       </a>`;
   }
 
